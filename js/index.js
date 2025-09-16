@@ -59,10 +59,7 @@ document.addEventListener("DOMContentLoaded", function () {
 window.addEventListener('scroll', function () {
   const header = document.querySelector('header');
   const scrollPosition = window.scrollY;
-
-  // Порог скролла (например, 50px), после которого верхние блоки сворачиваются
   const scrollThreshold = 50;
-
   if (scrollPosition > scrollThreshold) {
     header.classList.add('scrolled');
   } else {
